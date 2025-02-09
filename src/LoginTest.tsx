@@ -4,7 +4,7 @@ export default function LoginTest() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
-  const handleLogin = (e: React.FormEvent) => {
+  const handleLogin = (e: React.FormEvent) => { // Changed event to e
     e.preventDefault();
     console.log('Logging in with:', { email, password });
   };
